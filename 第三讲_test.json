@@ -1,0 +1,13 @@
+{
+    "user": [
+        {
+            "name": "xiaoli",
+            "age": 18,
+            "sex": "man",
+            "information": {
+                "height": 180,
+                "weight": 160
+            }
+        }
+    ]
+}
