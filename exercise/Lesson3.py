@@ -21,14 +21,14 @@
 #     print("类型错误")
 
 # if True:
-#     print('如果 表达式为真，则执行')
+#     print('如果表达式为真，则执行')
 # if 1==1:
 #     print('1==1为真，所以执行')
 # if 1==2:#1==2为假，所以不执行
 #     print('1==2为假，所以不执行')
-# if 1==1 and 2==2:#and 代表并且, 为真，所以执行print('111’)
+# if 1==1 and 2==2:#and代表并且,为真，所以执行print('111’)
 #     print('111')
-# if 1==1 and 2==3:#and 代表并且, 为假，所以不执行print
+# if 1==1 and 2==3:#and代表并且,为假，所以不执行print
 #     print('222')
 # if 1==1 or 1==2:
 #     print('or一个为真打印')
@@ -65,10 +65,10 @@
 # ....
 # print(100)
 #
-# for i in range(1,101):    #循环输出1到100，初始值为1，当 i等于101时循环终止
-#     print(i)
+# foriinrange(1,101):#循环输出1到100，初始值为1，当i等于101时循环终止
+# print(i)
 #
-# for i in range(1,101):# for in rang(范围值)语法  循环输出1到100，初始值为1，当 i等于101时循环终止
+# for i in range(1,101):# for in rang(范围值)语法  循环输出1到100，初始值为1，当i等于101时循环终止
 #     print(i)
     #遍历列表
 # list1=["aaa","ccc","ccca","dddd"]
@@ -77,9 +77,9 @@
 # 2.
 # 遍历字典
 # dict1 = {"name": "王五", "age": 18, "sex": "男"}
-# for  key  in  dict1:
-#         print("{0}：{1}".format(key, dict1[key]))
-#     print(f"{key}:{dict1[key]}")
+# for key in dict1:
+#     print("{0}：{1}".format(key, dict1[key]))
+# print(f"{key}:{dict1[key]}")
 # dict1 = {"name": "王五", "age": 18, "sex": "男"}
 # for key in dict1.keys():
 #     print(key,dict1[key]) 字典取值的方式[]
@@ -87,8 +87,8 @@
 
 # 例二：求和
 # sum=0
-# for i in range(1,51): #1到50的和
-#     sum=sum+i
+# foriinrange(1,51):#1到50的和
+# sum=sum+i
 # print(sum)
 # sum=0
 # for i in range(1,51):#1到50的和
@@ -97,11 +97,23 @@
 #     print(sum)
 
 # 例三：统计列表中重复的数，并打印出下标的方法
-list=[1,3,4,3,3,5,6,7]
-for i in list:
-    if list.count(i)>1:#count统计元素出现次数，如果次数大于1，则说明有重复的数
-        print(list.index(i))
-##第一次循环取 1，count统计次数等于一，不满足>1的条件，所以不执行print(list.index(i))
-#第二次循环取 3，count统计次数大于一，满足>1的条件，所以执行print(list.index(i)) 输出3的下标1
-#第三次循环取 4，count统计次数等于一，不满足>1的条件，所以不执行print(list.index(i))
-#第三次循环取 3，count统计次数大于一，满足>1的条件，所以执行print(list.index(i))输出3的下标1
+# list=[1,3,4,3,3,5,6,7]
+# for i in list:
+#     if list.count(i)>1:#count统计元素出现次数，如果次数大于1，则说明有重复的数
+#         print(list.index(i))
+##第一次循环取1，count统计次数等于一，不满足>1的条件，所以不执行print(list.index(i))
+#第二次循环取3，count统计次数大于一，满足>1的条件，所以执行print(list.index(i))输出3的下标1
+#第三次循环取4，count统计次数等于一，不满足>1的条件，所以不执行print(list.index(i))
+#第三次循环取3，count统计次数大于一，满足>1的条件，所以执行print(list.index(i))输出3的下标1
+#冒泡排序
+list=[1,2,3,4,5,6,7,8]
+l=len(list)
+for y in range(l-1):
+    print(f"{l}-{1}")
+    for i in range(l-1-y):
+        print(f"{l}-{1}-{y}")
+        if list[i]<list[i+1]:
+            print(list)
+            list[i],list[i+1]=list[i+1],list[i]
+print(list)
+
