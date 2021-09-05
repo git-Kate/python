@@ -189,3 +189,13 @@
 #     print("2"+2)
 # except Exception as e:#统计所有的异常
 #     print('统计所有的异常',e)
+#课后作业
+#判断user2是否包含在user中
+# user={"name":"xiaowang","age":25,"height":180}
+# user2={"name":"xiaowang","height":180}
+# for key in user:
+#         if key in user2:
+#             if user[key]==user2[key]:
+#                 print("包含")
+#             else:
+#                 print('不包含')
