@@ -117,3 +117,4 @@ for y in range(l-1):
             list[i],list[i+1]=list[i+1],list[i]
 print(list)
 
+#测试
